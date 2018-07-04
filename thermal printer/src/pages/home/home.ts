@@ -42,6 +42,7 @@ export class HomePage {
 
     },err=>{
       console.log("ERROR",err);
+      console.log("ERROR",err);
       let mno=this.alertCtrl.create({
         title:"ERROR "+err,
         buttons:['Dismiss']
