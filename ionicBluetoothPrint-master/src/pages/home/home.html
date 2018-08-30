@@ -1,0 +1,30 @@
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+<ion-content padding>
+  Printer Selected:
+  <ion-item>{{selectedPrinter?.name}}</ion-item>
+  <ion-item>
+    <button ion-item (tap)="listBTDevice()">
+      Select Printer
+    </button>
+  </ion-item>
+  <ion-item>
+    <button ion-item (tap)="testConnectPrinter()">
+      Test Connection
+    </button>
+  </ion-item>
+  <ion-item>
+    <button ion-item (tap)="testPrinter()">
+      Test Print
+    </button>
+  </ion-item>
+
+
+
+</ion-content>
