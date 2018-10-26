@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+
+<div class="mainDiv">
+
+  <!-- <agm-map [latitude]="lat" [longitude]="lng" [zoom]="10">
+    <agm-marker [latitude]="lat" [longitude]="lng" [label]="{color: 'white', text: 'ss'}" [iconUrl]="icon"></agm-marker>
+    <agm-marker [latitude]="lat1" [longitude]="lng1" [label]="{color: 'white', text: 'ss'}" [iconUrl]="icon"></agm-marker>
+    <agm-marker [latitude]="lat2" [longitude]="lng2" [label]="{color: 'white', text: 'ss'}" [iconUrl]="icon"></agm-marker>
+  </agm-map> -->
+
+  <div #map id="map"></div>
+
+
+
+
+
+  <div class="secondDiv">
+    <ion-slides (ionSlideDidChange)="slideChanged()">
+      <ion-slide>
+        <h1>Slide 1</h1>
+      </ion-slide>
+      <ion-slide>
+        <h1>Slide 2</h1>
+      </ion-slide>
+
+    </ion-slides>
+  </div>
+</div>

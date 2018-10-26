@@ -1,0 +1,41 @@
+page-home {
+
+    .mainDiv{
+        height: 100%;
+        background: white;
+    }
+    agm-map {
+        height : 60%;
+      }
+      
+      .gmnoprint{
+          display: none;
+      }
+      .gmnoprint a  {
+        display:none !important;
+    }
+    
+    .secondDiv{
+        height: 40%;
+        // background: white;
+    }
+
+
+    #map{
+        position: relative;
+        overflow: hidden;
+        height: 60%;
+    }
+    .gm-style {
+        position: absolute;
+        z-index: 0;
+        left: 0px;
+        overflow: hidden;
+        top: 0px;
+        height: 100%;
+        width: 100%;
+        padding: 0px;
+        border-width: 0px;
+        margin: 0px;
+}
+}
