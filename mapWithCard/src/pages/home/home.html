@@ -1,0 +1,96 @@
+<div class="mainDiv">
+
+
+  <div #map id="map"></div>
+
+  <div class="secondDiv">
+    <ion-slides (ionSlideDidChange)="slideChanged()" slidesPerView=2>
+      <ion-slide *ngFor='let data of cardsData'>
+
+
+        <div   [ngClass]='data.isActive === true ? "selectedCardDiv" : "cardDiv"'>
+          <img [src]="data.image" class="title-img" />
+
+
+          <div class="content">
+
+            <div class="divTitle">
+              {{data.name}}
+            </div>
+
+
+
+            <div class="card-Date">
+              <img src="assets/imgs/home/history.svg" class="iconImg">
+              <div class="imageText">{{data.date}}</div>
+            </div>
+
+
+
+
+            <div class="card-room">
+              <img src="assets/imgs/home/history.svg" class="iconImg">
+              <div class="imageText">{{data.room}} Rooms</div>
+            </div>
+            <div class="card-room">
+              <img src="assets/imgs/home/history.svg" class="iconImg">
+              <div class="imageText">{{data.persons}} Persons</div>
+            </div>
+
+
+
+
+          </div>
+
+
+          <div class="btnContent">
+
+
+            <ion-row style="height: 90%;">
+              <ion-col style="align-self: center ; padding:0px">
+                <button ion-button round small=true class="card-btn">$ {{data.price}}</button>
+              </ion-col>
+            </ion-row>
+
+
+          </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+      </ion-slide>
+
+
+
+
+
+      <ion-slide>
+        <h1>No More Record</h1>
+      </ion-slide>
+
+
+
+    </ion-slides>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
